@@ -1,0 +1,189 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: whitesmoke;
+    --color-accent: rgb(11, 177, 61);
+    --color-black: rgb(29, 29, 29);
+    --color-grey: #b9b9b9f1;
+    --bg-primary: rgba(19, 19, 19, 0.932);
+    --bg-dark-grey: #424242;
+
+    --box-shadow-light: 1.2px 2px 2px var(--color-grey);
+    --box-shadow-dark: 1px 4px 5px var(--color-black);
+    --box-shadow-green: 2px 1px 1px var(--color-accent);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-primary);
+}
+
+header {
+    position: relative;
+    height: 36vh;
+    width: 100%;
+}
+/* Banner principal */
+.banner {
+    height: 100%;
+    width: 100%;
+    padding: .4em 1.4em .4em;
+    grid-column: 1 / -1; /* Ocupa a largura total da grade */
+}
+
+.banner_profile {
+    position: absolute;
+    bottom: -8em;
+    left: 12%;
+    transform: translateX(-50%);
+    width: 14em;
+    padding: 2em;
+    text-align: center;
+    background-color: var(--color-black);
+    border-radius: 10px;
+    color: var(--color-primary);
+    box-shadow: 1px 1.4px 10px var(--color-grey);
+}
+
+.banner_profile h3, p{
+    margin: .5em;
+    color: var(--color-green);
+}
+
+.banner_profile p span{
+    color: var(--color-primary);
+}
+
+.banner_profile_bg_img {
+    display: block;
+    background-image: url("https://media.licdn.com/dms/image/v2/D4E1BAQEpeK-0JqFz_g/company-background_10000/company-background_10000/0/1658420539871/black_hat_ethical_hacking_cover?e=2147483647&v=beta&t=9T7c32lF2OU4d25-LfxVB6ANlOH1PZZXkQJGqWZOnJ8");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 9.6em;
+    border-radius: .6em;
+    border: .02em solid var(--color-grey);
+}
+
+.banner_profile_img img{
+    width: 6em;
+    height: 6em;
+    margin-bottom: .6em;
+    border-radius: 100%;
+    border: .24em solid var(--color-border-green);
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1.2em;
+    padding: 1em;
+    width: 100%;
+    margin-bottom: 4em;
+}
+
+.column {
+    padding: .2em 0 2em;
+    border-radius: 5px;
+}
+
+.section {
+    margin: 2em 0;
+    background-color: var(--color-black);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow-dark);
+    padding: .5em;
+}
+
+.section h3 {
+    background-color: var(--bg-primary);
+    color: var(--color-accent);
+    border: .4px solid var(--color-primary);
+    text-align: center;
+    padding: .25em;
+}
+
+.section p {
+    text-align: justify;
+    padding: 5% 6% 2%;
+    color: var(--color-primary);
+}
+
+.column.sidebar {
+    transform: translateY(6.8em);
+}
+
+.column.sidebar ul li {
+    list-style: none;
+    padding: 1em;
+}
+
+.column.sidebar ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.column.sidebar ul li a:hover {
+    color: var(--color-accent);
+}
+
+.column.sidebar ul li a i {
+    margin-right: .45em;
+    font-size: 1.5em;
+    color: var(--color-primary);
+}
+
+.logo_stacks {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 1em; 
+    width: 100%;
+    background-color: var(--bg-primary);
+}
+
+.logo_stacks img {
+    height: 4em;
+    width: 4em;
+    margin: 1.2em;
+    background-color: var(--color-black);
+    border-radius: .25em;
+    opacity: .85;
+    padding: .4em;
+    box-shadow: var(--box-shadow-green);
+}
+
+.logo_stacks img:hover {
+    background-color: var(--color-primary);
+    cursor: pointer;
+    transition: all ease-in .2s;
+    transform: scale(1.1);
+}
+
+footer {
+    padding-top: .5em;
+    height: 8vh;
+    width: 100%;
+    background-color: var(--bg-primary);
+}
+
+footer p {
+    font-size: large;
+    color: var(--color-primary);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+
+    .banner_profile {
+        margin-left: 4em;
+        bottom: -5.5em;
+    }
+}
