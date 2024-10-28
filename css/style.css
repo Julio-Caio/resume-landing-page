@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+svg {
+    filter: invert(31%) sepia(93%) saturate(527%) hue-rotate(83deg) brightness(96%) contrast(101%);
+}
+
 :root {
     --color-primary: whitesmoke;
     --color-accent: rgb(11, 177, 61);
