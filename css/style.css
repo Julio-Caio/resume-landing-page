@@ -164,6 +164,83 @@ header {
     transform: scale(1.1);
 }
 
+.formacao_academica {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding: 1em;
+    margin: .4em;
+    background-color: var(--color-black);
+    border-radius: .4em;
+    box-shadow: var(--box-shadow-light);
+}
+
+.formacao_academica img {
+    width: 7.4em;
+    height: 7.3em;
+    border-radius: 1em;
+    padding: .6em;
+    margin: .5em;
+    display: block;
+}
+
+.formacao_academica_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1em; 
+}
+
+.formacao_academica a p, h4{
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    color: var(--color-accent);
+}
+
+.formacao_academica_periodo {
+    color: var(--color-grey);
+    margin-top: 0.3em;
+}
+
+.experiencia {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding: 1em;
+    margin: 0 auto;
+    background-color: var(--color-black);
+    border-radius: .4em;
+}
+
+.experiencia img {
+    width: 7.4em;
+    height: 7.4em;
+    border-radius: 1em;
+    padding: .6em;
+    margin: .5em;
+}
+
+.experiencia_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1em;
+}
+
+.experiencia h4{
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    color: var(--color-accent);
+}
+
+.experiencia_periodo {
+    color: var(--color-grey); 
+    margin-top: 0.3em; 
+}
+
+
 footer {
     padding-top: .5em;
     height: 8vh;
